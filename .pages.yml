@@ -1,34 +1,35 @@
 media:
-input: assets/images
-output: /assets/images
-​content:
-​name: posts
-label: Blog Posts
-type: collection
-path: _posts
-format: yaml-frontmatter
-slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-fields:
-​name: title
-label: Title
-type: string
-required: true
-​name: date
-label: Date
-type: datetime
-required: true
-​name: layout
-label: Layout
-type: string
-default: post
-hidden: true
-​name: categories
-label: Categories
-type: string
-list: true
-​name: image
-label: Cover Image
-type: image
-​name: body
-label: Content
-type: rich-text
+  input: assets/images
+  output: /assets/images
+
+content:
+  - name: posts
+    label: Blog Posts
+    type: collection
+    path: _posts
+    format: yaml-frontmatter
+    filename: "{year}-{month}-{day}-{slug}.md"
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: date
+        label: Date
+        type: datetime
+        required: true
+      - name: layout
+        label: Layout
+        type: string
+        default: post
+        hidden: true
+      - name: categories
+        label: Categories
+        type: string
+        list: true
+      - name: image
+        label: Cover Image
+        type: image
+      - name: body
+        label: Content
+        type: rich-text
