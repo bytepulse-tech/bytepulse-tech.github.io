@@ -47,7 +47,7 @@ meta_common_description: "Your meta description."
 # contact options (side nav bottom and about page)
 # the order of the items will be shown as here.
 # comment to remove any contact item
-contacts:
+contacts: "john.morgan2100@proton.me"
   #- github: ""
   #- email: ""
   #- linkedin: ""
