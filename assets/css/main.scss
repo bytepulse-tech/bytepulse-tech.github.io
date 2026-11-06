@@ -267,3 +267,10 @@
 {% if projects_page_exist %}
   @import "projects/project-container";
 {% endif %}
+
+/**********************************************************
+* Custom Font Overrides (Oswald)
+***********************************************************/
+body, h1, h2, h3, h4, h5, h6, .brand-text, .site-title, a {
+  font-family: 'Oswald', sans-serif !important;
+}
